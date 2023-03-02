@@ -1,0 +1,208 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Babylonica&family=Zeyada&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: url("./images/download2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    height: 48vh;
+
+}
+
+section h1 {
+    margin-top: 15px;
+    text-align: center;
+    color: #000;
+    font-family: 'Roboto Slab', serif;
+    font-size: clamp(1.5rem, 5vw, 3rem); 
+}
+
+.section {
+    background: #1e130c;
+    background: -webkit-linear-gradient(to right, #9a8478, #1e130c);
+    background: linear-gradient(to right, #9a8478, #1e130c);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-decoration-color: transparent;
+    text-decoration-color: transparent;
+    font-size: clamp(2.5rem, 4.5vw, 4rem);
+    text-align: center;
+    margin-top: 10px;
+}
+
+.color-change-2x {
+    -webkit-animation: color-change-2x 3s linear infinite alternate both;
+    animation: color-change-2x 3s linear infinite alternate both;
+}
+
+@-webkit-keyframes color-change-2x {
+    0% {
+        background: #1e130c;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-decoration-color: transparent;
+    }
+
+    100% {
+        background: #9a8478;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-decoration-color: transparent;
+    }
+}
+
+@keyframes color-change-2x {
+    0% {
+        background: #1e130c;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-decoration-color: transparent;
+    }
+
+    100% {
+        background: #9a8478;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-decoration-color: transparent;
+    }
+}
+
+.animated-bg{
+    background-image: linear-gradient(
+        to right,
+        #f6f7f8 0%,
+        #edeef1 10%,
+        #f6f7f8 20%,
+        #f6f7f8 100%
+    );
+    background-size: 200% 100%;
+    animation: bgPos 1s linear infinite;
+}
+
+@keyframes bgPos{
+    0%{
+        background-position: 50% 0;
+    }
+
+    100%{
+        background-position: -150% 0;
+    }
+}
+
+.btn-section {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15px;
+}
+
+.button {
+    font-size: clamp(1rem, 5vw, 2rem);
+    background: none;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 5px 30px;
+    cursor: pointer;
+    margin-top: 10px;
+    /* width: 50%; */
+}
+
+.table {
+    margin-left: 10px;
+    
+}
+
+.gift {
+    margin-right: 15px;
+}
+
+.active {
+    background: black;
+    color: aliceblue;
+}
+
+.search-container {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.search{
+    margin-top: 20px;
+    padding: 10px 10px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid;
+    font-size: 1.2rem;
+    width: 50%;
+}
+
+.search-btn{
+    margin:20px 0 0 10px;
+    font-size: 1.2rem;
+   
+    background: #1A212F;
+    color:#EEE ;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 12px;
+    justify-items: center;
+}
+
+@media  screen and (max-width:375px) {
+
+    .btn-section{
+        justify-content: space-evenly;
+        font-size: 10px;
+    }  
+    
+    .button{
+        padding: 10px 12px;
+        /* font-weight: bold; */
+    }
+
+    .table {
+        margin-right: 10px;
+        
+    }
+}
+
+@media  screen and (max-width:768px){
+    header {
+        background-image: url("./images/download2.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        justify-content: center;
+        align-items: center;
+        height: 48vh;
+    
+    }
+    
+    .btn-section {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 15px;
+    }
+
+    .button{
+        padding:10px 15px ;
+    }
+}

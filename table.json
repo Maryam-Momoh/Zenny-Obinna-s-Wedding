@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "SeatingArr": [
+            "Taiwo Ayoola",
+            "Kunel Akinpelu",
+            "Segun Oyero"
+        ]
+    },
+    {
+        "id": 2,
+        "SeatingArr": [
+            "Sheye akinwale",
+            "Layla Aminu",
+            "Maryam Yakubu"
+        ]
+    }
+]
